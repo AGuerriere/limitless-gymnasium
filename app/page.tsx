@@ -42,7 +42,7 @@ export default function Home() {
             <span>Scroll</span>
             <span className="line" />
           </a>
-          <div className="ticker">OPEN 7 DAYS · FROM 5:30</div>
+          <div className="ticker">OPEN 7 DAYS · MON–FRI 5:30</div>
         </div>
       </header>
 
@@ -78,8 +78,8 @@ export default function Home() {
                 <div className="l">Stations &amp; machines</div>
               </div>
               <div className="kpi">
-                <div className="v">24/7</div>
-                <div className="l">Member access</div>
+                <div className="v">7</div>
+                <div className="l">Days a week</div>
               </div>
               <div className="kpi">
                 <div className="v">BT54</div>
@@ -255,13 +255,13 @@ export default function Home() {
               <div>
                 <div className="col-title">— Opening Hours</div>
                 <div className="hours-list" id="hours">
-                  <div className="row" data-day="1"><span className="day">Monday</span><span className="h">05:30 — 22:00</span></div>
-                  <div className="row" data-day="2"><span className="day">Tuesday</span><span className="h">05:30 — 22:00</span></div>
-                  <div className="row" data-day="3"><span className="day">Wednesday</span><span className="h">05:30 — 22:00</span></div>
-                  <div className="row" data-day="4"><span className="day">Thursday</span><span className="h">05:30 — 22:00</span></div>
-                  <div className="row" data-day="5"><span className="day">Friday</span><span className="h">05:30 — 21:00</span></div>
-                  <div className="row" data-day="6"><span className="day">Saturday</span><span className="h">08:00 — 18:00</span></div>
-                  <div className="row" data-day="0"><span className="day">Sunday</span><span className="h">09:00 — 14:00</span></div>
+                  <div className="row" data-day="1"><span className="day">Monday</span><span className="h">05:30 — 21:30</span></div>
+                  <div className="row" data-day="2"><span className="day">Tuesday</span><span className="h">05:30 — 21:30</span></div>
+                  <div className="row" data-day="3"><span className="day">Wednesday</span><span className="h">05:30 — 21:30</span></div>
+                  <div className="row" data-day="4"><span className="day">Thursday</span><span className="h">05:30 — 21:30</span></div>
+                  <div className="row" data-day="5"><span className="day">Friday</span><span className="h">05:30 — 21:30</span></div>
+                  <div className="row" data-day="6"><span className="day">Saturday</span><span className="h">07:00 — 15:00</span></div>
+                  <div className="row" data-day="0"><span className="day">Sunday</span><span className="h">08:00 — 14:00</span></div>
                 </div>
                 <p className="eyebrow" style={{ marginTop: "24px", color: "var(--ink-faint)", letterSpacing: ".2em", lineHeight: "1.7" }}>
                   Holiday hours posted to Instagram &amp; Facebook.
