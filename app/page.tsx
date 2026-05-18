@@ -1,65 +1,362 @@
 import Image from "next/image";
+import Nav from "@/components/Nav";
+import Reveal from "@/components/Reveal";
+import HoursHighlight from "@/components/HoursHighlight";
+import YearStamp from "@/components/YearStamp";
+// HoursHighlight runs client-side to highlight today's hours row
+
+const ASHBOURNE_URL =
+  "https://secure.ashbournemanagement.co.uk/signupUK/index.aspx?fn=GRDT2";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      <HoursHighlight />
+      <Nav />
+
+      {/* ============= HERO ============= */}
+      <header className="hero" id="top">
+        <div className="hero-photo-bg" />
+
+        <div className="top-meta">
+          <span>EST. <b>2022</b> · BALLYCASTLE</span>
+          <span>54.8854°N &nbsp; 6.2389°W</span>
+        </div>
+
+        <div className="center">
+          <div className="eyebrow reveal">A HARDCORE LOCAL GYM · NORTH ANTRIM</div>
+          <h1 className="reveal">
+            TRAIN<br />
+            WITHOUT<br />
+            <span className="it">limits.</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="tag reveal">
+            Independent, locally owned, built for people who want to train properly.
+            Serious equipment, qualified staff, and no distractions — just work.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+
+        <div className="bot-row">
+          <div className="ticker">— PUSH · PULL · REPEAT —</div>
+          <a className="scroll-cue" href="#about" aria-label="Scroll">
+            <span>Scroll</span>
+            <span className="line" />
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          <div className="ticker">OPEN 7 DAYS · FROM 5:30</div>
         </div>
-      </main>
-    </div>
+      </header>
+
+      {/* ============= ABOUT ============= */}
+      <section className="s" id="about">
+        <div className="inner">
+          <div className="section-head">
+            <div className="num"><span className="eyebrow"><b>01</b> / About</span></div>
+            <div className="ttl"><h2 className="h-section">Built for people<br />who actually train.</h2></div>
+          </div>
+
+          <div className="manifesto-body">
+            <div className="col-label">— THE&nbsp;ETHOS</div>
+            <Reveal>
+              <p className="lede">
+                Limitless is a small, independent gym in the centre of Ballycastle.
+                Founded and run by local people, it&apos;s a straightforward place to train —{" "}
+                <em>well-equipped, well-staffed, and open long hours</em> so you can get in
+                whenever suits you. No gimmicks, no contracts you can&apos;t get out of.
+                Just a good gym where you can make real progress.
+              </p>
+            </Reveal>
+          </div>
+
+          <Reveal>
+            <div className="kpi-row">
+              <div className="kpi">
+                <div className="v">3,200<span style={{ fontSize: ".5em", color: "var(--ink-dim)" }}> sq·ft</span></div>
+                <div className="l">Of training floor</div>
+              </div>
+              <div className="kpi">
+                <div className="v">40+</div>
+                <div className="l">Stations &amp; machines</div>
+              </div>
+              <div className="kpi">
+                <div className="v">24/7</div>
+                <div className="l">Member access</div>
+              </div>
+              <div className="kpi">
+                <div className="v">BT54</div>
+                <div className="l">Ballycastle</div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ============= THE GYM ============= */}
+      <section className="s" id="gym">
+        <div className="inner">
+          <div className="section-head">
+            <div className="num"><span className="eyebrow"><b>02</b> / The Gym</span></div>
+            <div className="ttl">
+              <h2 className="h-section">Proper equipment.<br />Well laid out.</h2>
+              <p className="eyebrow" style={{ color: "var(--ink-dim)", maxWidth: "520px", lineHeight: "1.7", letterSpacing: ".18em" }}>
+                Free-weight floor, plate-loaded machines, dedicated cable stack,
+                cardio equipment, and a separate conditioning area.
+              </p>
+            </div>
+          </div>
+
+          <Reveal>
+            <div className="gym-grid">
+              <div className="tile t1">
+                <Image src="/gym/main-floor.png" alt="Main training floor" fill style={{ objectFit: "cover" }} />
+                <span className="cap">01 · Main floor</span>
+              </div>
+              <div className="tile t2">
+                <Image src="/gym/free-weights.png" alt="Free weight and machine area" fill style={{ objectFit: "cover" }} />
+                <span className="cap">02 · Free weights</span>
+              </div>
+              <div className="tile t3">
+                <Image src="/gym/cables.png" alt="Cable and machine setup" fill style={{ objectFit: "cover" }} />
+                <span className="cap">03 · Cables</span>
+              </div>
+              <div className="tile t4">
+                <Image src="/gym/cardio.png" alt="Cardio area" fill style={{ objectFit: "cover" }} />
+                <span className="cap">04 · Cardio</span>
+              </div>
+              <div className="tile t5">
+                <Image src="/gym/machines.png" alt="Selectorised machines" fill style={{ objectFit: "cover", objectPosition: "center 30%" }} />
+                <span className="cap">05 · Machines</span>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ============= TEAM ============= */}
+      <section className="s" id="team">
+        <div className="inner">
+          <div className="section-head">
+            <div className="num"><span className="eyebrow"><b>03</b> / Team</span></div>
+            <div className="ttl">
+              <h2 className="h-section">The coaches.</h2>
+              <p className="eyebrow" style={{ color: "var(--ink-dim)", maxWidth: "520px", lineHeight: "1.7", letterSpacing: ".18em" }}>
+                Qualified, on the floor, and approachable.
+                PT sessions can be booked at reception or through the members portal.
+              </p>
+            </div>
+          </div>
+
+          <Reveal>
+            <div className="team-grid">
+
+              {/* Aidan — Founder */}
+              <div className="coach-founder-row">
+                <div className="portrait-wrap">
+                  <Image src="/portraits/aidan.png" alt="Aidan — Founder" fill style={{ objectFit: "cover", objectPosition: "center 10%" }} />
+                </div>
+                <div className="founder-info">
+                  <div>
+                    <div className="founder-tag">— Founder &amp; Head Coach</div>
+                  </div>
+                  <h3 className="founder-name">Aidan</h3>
+                  <div className="founder-role">Limitless Gymnasium · Est. 2022</div>
+                  <p className="founder-bio">
+                    Aidan opened Limitless in 2022 with one straightforward goal — to give
+                    Ballycastle a proper, independent gym run by people who actually train.
+                    He&apos;s on the floor most days and available to help with programming,
+                    technique, or just getting started.
+                  </p>
+                  <div className="founder-creds">
+                    <div className="cred"><b>Founder</b> Limitless Gymnasium</div>
+                    <div className="cred"><b>Head Coach</b> &amp; Personal Trainer</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Conall */}
+              <article className="coach">
+                <div className="portrait">
+                  <Image src="/portraits/conall.png" alt="Conall McGlynn" fill style={{ objectFit: "cover", objectPosition: "center 15%" }} />
+                </div>
+                <div className="id">
+                  <div className="role">— Welcomes</div>
+                  <div className="name">Conall<br />McGlynn</div>
+                </div>
+                <div className="creds">
+                  <div className="cred"><b>L2</b> Gym Instructor</div>
+                  <div className="cred"><b>L3</b> Personal Training</div>
+                  <div className="cred"><b>L4</b> Nutrition · Weight Mgmt &amp; Athletic Performance</div>
+                </div>
+                <div className="socials">IG @mcglynn_fitness</div>
+              </article>
+
+              {/* Eilish */}
+              <article className="coach">
+                <div className="portrait">
+                  <Image src="/portraits/eilish.png" alt="Eilish McCaw" fill style={{ objectFit: "cover", objectPosition: "center 12%" }} />
+                </div>
+                <div className="id">
+                  <div className="role">— Welcomes</div>
+                  <div className="name">Eilish<br />McCaw</div>
+                </div>
+                <div className="creds">
+                  <div className="cred"><b>L2</b> Fitness Instructor</div>
+                </div>
+                <div className="socials">IG @eilish_elite.fitness</div>
+              </article>
+
+              {/* Tiarnan */}
+              <article className="coach">
+                <div className="portrait">
+                  <Image src="/portraits/tiarnan.png" alt="Tiarnan Shepherd" fill style={{ objectFit: "cover", objectPosition: "center 8%" }} />
+                </div>
+                <div className="id">
+                  <div className="role">— Welcomes</div>
+                  <div className="name">Tiarnan<br />Shepherd</div>
+                </div>
+                <div className="creds">
+                  <div className="cred"><b>L2</b> Fitness Instructor</div>
+                </div>
+                <div className="socials">IG @tiarnan_shepherd</div>
+              </article>
+
+              {/* Danny */}
+              <article className="coach">
+                <div className="portrait">
+                  <Image src="/portraits/danny.png" alt="Danny Scullion" fill style={{ objectFit: "cover", objectPosition: "center 5%" }} />
+                </div>
+                <div className="id">
+                  <div className="role">— Welcomes</div>
+                  <div className="name">Danny<br />Scullion</div>
+                </div>
+                <div className="creds">
+                  <div className="cred"><b>L2</b> Fitness Instructor</div>
+                </div>
+                <div className="socials">IG @ds_coaching.limitless</div>
+              </article>
+
+              {/* Empty cell to fill last row */}
+              <div style={{ borderBottom: "1px solid var(--line)" }} />
+
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ============= VISIT ============= */}
+      <section className="s" id="visit">
+        <div className="inner">
+          <div className="section-head">
+            <div className="num"><span className="eyebrow"><b>04</b> / Visit</span></div>
+            <div className="ttl"><h2 className="h-section">Open early.<br />Open late.</h2></div>
+          </div>
+
+          <Reveal>
+            <div className="visit-grid">
+              <div>
+                <div className="col-title">— Opening Hours</div>
+                <div className="hours-list" id="hours">
+                  <div className="row" data-day="1"><span className="day">Monday</span><span className="h">05:30 — 22:00</span></div>
+                  <div className="row" data-day="2"><span className="day">Tuesday</span><span className="h">05:30 — 22:00</span></div>
+                  <div className="row" data-day="3"><span className="day">Wednesday</span><span className="h">05:30 — 22:00</span></div>
+                  <div className="row" data-day="4"><span className="day">Thursday</span><span className="h">05:30 — 22:00</span></div>
+                  <div className="row" data-day="5"><span className="day">Friday</span><span className="h">05:30 — 21:00</span></div>
+                  <div className="row" data-day="6"><span className="day">Saturday</span><span className="h">08:00 — 18:00</span></div>
+                  <div className="row" data-day="0"><span className="day">Sunday</span><span className="h">09:00 — 14:00</span></div>
+                </div>
+                <p className="eyebrow" style={{ marginTop: "24px", color: "var(--ink-faint)", letterSpacing: ".2em", lineHeight: "1.7" }}>
+                  Holiday hours posted to Instagram &amp; Facebook.
+                </p>
+              </div>
+
+              <div>
+                <div className="col-title">— Find Us · Contact</div>
+                <div className="contact-block">
+                  <div className="contact-item">
+                    <div className="label">Address</div>
+                    <div className="val">
+                      Limitless Gymnasium<br />
+                      Ballycastle, Co. Antrim<br />
+                      BT54
+                    </div>
+                  </div>
+                  <div className="contact-item">
+                    <div className="label">Phone</div>
+                    <a className="val" href="tel:+442820000000">+44 28 20 00 00 00</a>
+                  </div>
+                  <div className="contact-item">
+                    <div className="label">Email</div>
+                    <a className="val" href="mailto:hello@limitlessgymnasium.co.uk">hello@limitlessgymnasium.co.uk</a>
+                  </div>
+                  <div className="contact-item">
+                    <div className="label">Socials</div>
+                    <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                      <a className="val" href="https://instagram.com/limitless.gymnasium" target="_blank" rel="noopener noreferrer">IG @limitless.gymnasium</a>
+                      <a className="val" href="https://facebook.com/limitless.gymnasium" target="_blank" rel="noopener noreferrer">FB @limitless.gymnasium</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ============= MEMBERS CTA ============= */}
+      <section className="members-section" id="members">
+        <div className="inner">
+          <span className="eyebrow">— Membership management</span>
+          <h2>Sign up &amp; manage your <span className="it">membership.</span></h2>
+          <p>
+            Memberships, joining, billing and account changes are all handled by{" "}
+            <b style={{ color: "var(--ink)", fontWeight: 600 }}>Ashbourne</b> — our membership management partner.
+            Sign up or log in over there.
+          </p>
+          <a className="btn-big" href={ASHBOURNE_URL} target="_blank" rel="noopener noreferrer">
+            <span>Go to Ashbourne</span>
+            <span className="arr">→</span>
+          </a>
+          <div className="btn-meta">External · ashbournemanagement.co.uk</div>
+        </div>
+      </section>
+
+      {/* ============= FOOTER ============= */}
+      <footer>
+        <div className="inner">
+          <div className="foot-mark" aria-hidden="true">LIMITLESS</div>
+          <div className="row">
+            <div>
+              <div className="col-label">— Visit</div>
+              <div className="links-v">
+                <span>Ballycastle, Co. Antrim · BT54</span>
+                <a href="tel:+442820000000">+44 28 20 00 00 00</a>
+                <a href="mailto:hello@limitlessgymnasium.co.uk">hello@limitlessgymnasium.co.uk</a>
+              </div>
+            </div>
+            <div>
+              <div className="col-label">— Site</div>
+              <div className="links-v">
+                <a href="#about">About</a>
+                <a href="#gym">The Gym</a>
+                <a href="#team">Team</a>
+                <a href="#visit">Visit &amp; Hours</a>
+                <a href="#members">Members</a>
+              </div>
+            </div>
+            <div>
+              <div className="col-label">— Follow</div>
+              <div className="links-v">
+                <a href="https://instagram.com/limitless.gymnasium" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://facebook.com/limitless.gymnasium" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href={ASHBOURNE_URL} target="_blank" rel="noopener noreferrer">Members Portal ↗</a>
+              </div>
+            </div>
+          </div>
+          <div className="baseline">
+            <span>© <YearStamp /> Limitless Gymnasium · Ballycastle</span>
+            <span>No cookies · No tracking</span>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }
