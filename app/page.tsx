@@ -24,7 +24,7 @@ export default function Home() {
         </div>
 
         <div className="center">
-          <div className="eyebrow reveal">A HARDCORE LOCAL GYM · NORTH ANTRIM</div>
+          <div className="eyebrow reveal">A HARDCORE LOCAL GYM · BALLYCASTLE</div>
           <h1 className="reveal">
             TRAIN<br />
             WITHOUT<br />
