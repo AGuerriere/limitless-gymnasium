@@ -14,7 +14,7 @@ export default function Home() {
       <HoursHighlight />
       <Nav />
 
-      {/* ============= HERO ============= */}
+      {/* ============= HERO ============== */}
       <header className="hero" id="top">
         <div className="hero-photo-bg" />
 
