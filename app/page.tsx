@@ -304,15 +304,15 @@ export default function Home() {
       {/* ============= MEMBERS CTA ============= */}
       <section className="members-section" id="members">
         <div className="inner">
-          <span className="eyebrow">— Membership management</span>
-          <h2>Sign up &amp; manage your <span className="it">membership.</span></h2>
+          <span className="eyebrow">— Memberships &amp; Day Passes</span>
+          <h2>Join, or just <span className="it">drop in.</span></h2>
           <p>
-            Memberships, joining, billing and account changes are all handled by{" "}
+            Full memberships and day passes are both handled through{" "}
             <b style={{ color: "var(--ink)", fontWeight: 600 }}>Ashbourne</b> — our membership management partner.
-            Sign up or log in over there.
+            Sign up for a membership or buy a day pass over there.
           </p>
           <a className="btn-big" href={ASHBOURNE_URL} target="_blank" rel="noopener noreferrer">
-            <span>Go to Ashbourne</span>
+            <span>Memberships &amp; Day Passes</span>
             <span className="arr">→</span>
           </a>
           <div className="btn-meta">External · ashbournemanagement.co.uk</div>

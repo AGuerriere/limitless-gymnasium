@@ -58,7 +58,7 @@ export default function Nav() {
         ))}
       </div>
       <a className="cta" href={ASHBOURNE_URL} target="_blank" rel="noopener noreferrer">
-        <span>Member Sign Up</span>
+        <span>Memberships &amp; Day Passes</span>
         <span className="arr">→</span>
       </a>
     </nav>
