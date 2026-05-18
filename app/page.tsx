@@ -280,12 +280,10 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="contact-item">
-                    <div className="label">Phone</div>
-                    <a className="val" href="tel:+442820000000">+44 28 20 00 00 00</a>
-                  </div>
-                  <div className="contact-item">
-                    <div className="label">Email</div>
-                    <a className="val" href="mailto:hello@limitlessgymnasium.co.uk">hello@limitlessgymnasium.co.uk</a>
+                    <div className="label">Contact</div>
+                    <div className="val" style={{ fontSize: "clamp(14px, 1.2vw, 16px)", color: "var(--ink-dim)", fontFamily: "var(--font-manrope)", fontWeight: 400, lineHeight: 1.6 }}>
+                      All enquiries through Instagram — DM us and we&apos;ll get back to you.
+                    </div>
                   </div>
                   <div className="contact-item">
                     <div className="label">Socials</div>
@@ -328,8 +326,7 @@ export default function Home() {
               <div className="col-label">— Visit</div>
               <div className="links-v">
                 <span>Ballycastle, Co. Antrim · BT54</span>
-                <a href="tel:+442820000000">+44 28 20 00 00 00</a>
-                <a href="mailto:hello@limitlessgymnasium.co.uk">hello@limitlessgymnasium.co.uk</a>
+                <a href="https://www.instagram.com/limitless.gymnasium/" target="_blank" rel="noopener noreferrer">Contact via Instagram</a>
               </div>
             </div>
             <div>
