@@ -20,7 +20,7 @@ export default function Home() {
 
         <div className="top-meta">
           <span>EST. <b>2022</b> · BALLYCASTLE</span>
-          <span>54.8854°N &nbsp; 6.2389°W</span>
+          <span>55.2003°N &nbsp; 6.2543°W</span>
         </div>
 
         <div className="center">
@@ -290,8 +290,8 @@ export default function Home() {
                   <div className="contact-item">
                     <div className="label">Socials</div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                      <a className="val" href="https://instagram.com/limitless.gymnasium" target="_blank" rel="noopener noreferrer">IG @limitless.gymnasium</a>
-                      <a className="val" href="https://facebook.com/limitless.gymnasium" target="_blank" rel="noopener noreferrer">FB @limitless.gymnasium</a>
+                      <a className="val" href="https://www.instagram.com/limitless.gymnasium/" target="_blank" rel="noopener noreferrer">IG @limitless.gymnasium</a>
+                      <a className="val" href="https://www.facebook.com/p/Limitless-Gymnasium-61556424757610/" target="_blank" rel="noopener noreferrer">FB Limitless Gymnasium</a>
                     </div>
                   </div>
                 </div>
@@ -345,8 +345,8 @@ export default function Home() {
             <div>
               <div className="col-label">— Follow</div>
               <div className="links-v">
-                <a href="https://instagram.com/limitless.gymnasium" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://facebook.com/limitless.gymnasium" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/limitless.gymnasium/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/p/Limitless-Gymnasium-61556424757610/" target="_blank" rel="noopener noreferrer">Facebook</a>
                 <a href={ASHBOURNE_URL} target="_blank" rel="noopener noreferrer">Members Portal ↗</a>
               </div>
             </div>
