@@ -8,6 +8,11 @@ import YearStamp from "@/components/YearStamp";
 const ASHBOURNE_URL =
   "https://secure.ashbournemanagement.co.uk/signupUK/index.aspx?fn=GRDT2";
 
+const ASCND_BOOKING_URL =
+  "https://goteamup.com/p/12305984-ascnd/start/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3";
+
+const ASCND_INSTAGRAM_URL = "https://www.instagram.com/ascnd.bc";
+
 export default function Home() {
   return (
     <>
@@ -290,9 +295,57 @@ export default function Home() {
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                       <a className="val" href="https://www.instagram.com/limitless.gymnasium/" target="_blank" rel="noopener noreferrer">IG @limitless.gymnasium</a>
                       <a className="val" href="https://www.facebook.com/p/Limitless-Gymnasium-61556424757610/" target="_blank" rel="noopener noreferrer">FB Limitless Gymnasium</a>
+                      <a className="val" href={ASCND_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">IG @ascnd.bc — Classes</a>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ============= CLASSES (ASCND) ============= */}
+      <section className="s" id="classes">
+        <div className="inner">
+          <div className="section-head">
+            <div className="num"><span className="eyebrow"><b>05</b> / Classes</span></div>
+            <div className="ttl">
+              <h2 className="h-section">Group classes.<br /><span className="it">Book your spot.</span></h2>
+              <p className="eyebrow" style={{ color: "var(--ink-dim)", maxWidth: "520px", lineHeight: "1.7", letterSpacing: ".18em" }}>
+                Classes at Limitless are run by our sister company Ascnd.
+                Book directly through their platform — all levels welcome.
+              </p>
+            </div>
+          </div>
+
+          <Reveal>
+            <div className="ascnd-block">
+              <div className="ascnd-info">
+                <div className="col-title">— About Ascnd</div>
+                <p style={{ fontSize: "clamp(15px, 1.2vw, 17px)", color: "var(--ink-dim)", lineHeight: "1.65", maxWidth: "560px" }}>
+                  Ascnd is the class provider operating out of Limitless Gymnasium.
+                  From conditioning and circuits to yoga and more — their timetable runs
+                  across the week so you can fit a class around your regular training.
+                </p>
+                <div style={{ marginTop: "24px" }}>
+                  <a
+                    className="val"
+                    href={ASCND_INSTAGRAM_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ fontFamily: "var(--font-archivo)", fontWeight: 600, fontSize: "clamp(15px, 1.2vw, 17px)", borderBottom: "1px solid var(--line-2)", paddingBottom: "2px", transition: "border-color 0.2s" }}
+                  >
+                    IG @ascnd.bc ↗
+                  </a>
+                </div>
+              </div>
+              <div className="ascnd-cta">
+                <a className="btn-big" href={ASCND_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  <span>Book a Class</span>
+                  <span className="arr">→</span>
+                </a>
+                <div className="btn-meta">External · goteamup.com · Ascnd</div>
               </div>
             </div>
           </Reveal>
@@ -327,6 +380,7 @@ export default function Home() {
               <div className="links-v">
                 <span>Ballycastle, Co. Antrim · BT54</span>
                 <a href="https://www.instagram.com/limitless.gymnasium/" target="_blank" rel="noopener noreferrer">Contact via Instagram</a>
+                <a href={ASCND_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">Ascnd (Classes) on Instagram</a>
               </div>
             </div>
             <div>
@@ -336,14 +390,16 @@ export default function Home() {
                 <a href="#gym">The Gym</a>
                 <a href="#team">Team</a>
                 <a href="#visit">Visit &amp; Hours</a>
+                <a href="#classes">Classes</a>
                 <a href="#members">Members</a>
               </div>
             </div>
             <div>
               <div className="col-label">— Follow</div>
               <div className="links-v">
-                <a href="https://www.instagram.com/limitless.gymnasium/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://www.facebook.com/p/Limitless-Gymnasium-61556424757610/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/limitless.gymnasium/" target="_blank" rel="noopener noreferrer">Limitless · Instagram</a>
+                <a href="https://www.facebook.com/p/Limitless-Gymnasium-61556424757610/" target="_blank" rel="noopener noreferrer">Limitless · Facebook</a>
+                <a href={ASCND_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">Ascnd · Instagram ↗</a>
                 <a href={ASHBOURNE_URL} target="_blank" rel="noopener noreferrer">Members Portal ↗</a>
               </div>
             </div>

@@ -5,11 +5,15 @@ import { useEffect, useState, useRef } from "react";
 const ASHBOURNE_URL =
   "https://secure.ashbournemanagement.co.uk/signupUK/index.aspx?fn=GRDT2";
 
+const ASCND_BOOKING_URL =
+  "https://goteamup.com/p/12305984-ascnd/start/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3";
+
 const NAV_LINKS = [
   { href: "#about", label: "About" },
   { href: "#gym", label: "The Gym" },
   { href: "#team", label: "Team" },
   { href: "#visit", label: "Visit" },
+  { href: "#classes", label: "Classes" },
 ];
 
 export default function Nav() {
@@ -57,10 +61,16 @@ export default function Nav() {
           </a>
         ))}
       </div>
-      <a className="cta" href={ASHBOURNE_URL} target="_blank" rel="noopener noreferrer">
-        <span>Memberships &amp; Day Passes</span>
-        <span className="arr">→</span>
-      </a>
+      <div className="cta-group">
+        <a className="cta cta-alt" href={ASCND_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+          <span>Book Classes</span>
+          <span className="arr">→</span>
+        </a>
+        <a className="cta" href={ASHBOURNE_URL} target="_blank" rel="noopener noreferrer">
+          <span>Memberships &amp; Day Passes</span>
+          <span className="arr">→</span>
+        </a>
+      </div>
     </nav>
   );
 }
