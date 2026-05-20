@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         <div className="bot-row">
-          <div className="ticker">— PUSH · PULL · LEG —</div>
+          <div className="ticker">— PUSH · PULL · REPEAT —</div>
           <a className="scroll-cue" href="#about" aria-label="Scroll">
             <span>Scroll</span>
             <span className="line" />
