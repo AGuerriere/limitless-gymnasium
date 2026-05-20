@@ -180,7 +180,7 @@ export default function Home() {
               {/* Conall */}
               <article className="coach">
                 <div className="portrait">
-                  <Image src="/portraits/conall.png" alt="Conall McGlynn" fill style={{ objectFit: "cover", objectPosition: "center 15%" }} />
+                  <Image src="/portraits/conall.webp" alt="Conall McGlynn" fill style={{ objectFit: "cover", objectPosition: "center 15%" }} />
                 </div>
                 <div className="id">
                   <div className="role">— Welcomes</div>
@@ -197,7 +197,7 @@ export default function Home() {
               {/* Eilish */}
               <article className="coach">
                 <div className="portrait">
-                  <Image src="/portraits/eilish.png" alt="Eilish McCaw" fill style={{ objectFit: "cover", objectPosition: "center 12%" }} />
+                  <Image src="/portraits/eilish.webp" alt="Eilish McCaw" fill style={{ objectFit: "cover", objectPosition: "center 12%" }} />
                 </div>
                 <div className="id">
                   <div className="role">— Welcomes</div>
@@ -227,7 +227,7 @@ export default function Home() {
               {/* Danny */}
               <article className="coach">
                 <div className="portrait">
-                  <Image src="/portraits/danny.png" alt="Danny Scullion" fill style={{ objectFit: "cover", objectPosition: "center 5%" }} />
+                  <Image src="/portraits/danny.webp" alt="Danny Scullion" fill style={{ objectFit: "cover", objectPosition: "center 5%" }} />
                 </div>
                 <div className="id">
                   <div className="role">— Welcomes</div>
@@ -246,6 +246,53 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
+      {/* ============= CLASSES (ASCND) ============= */}
+      <section className="s" id="classes">
+        <div className="inner">
+          <div className="section-head">
+            <div className="num"><span className="eyebrow"><b>05</b> / Classes</span></div>
+            <div className="ttl">
+              <h2 className="h-section">Group classes.<br /><span className="it">Book your spot.</span></h2>
+              <p className="eyebrow" style={{ color: "var(--ink-dim)", maxWidth: "520px", lineHeight: "1.7", letterSpacing: ".18em" }}>
+                Classes at Limitless are run by our sister company Ascnd.
+                Book directly through their platform — all levels welcome.
+              </p>
+            </div>
+          </div>
+
+          <Reveal>
+            <div className="ascnd-block">
+              <div className="ascnd-info">
+                <div className="col-title">— About Ascnd</div>
+                <p style={{ fontSize: "clamp(15px, 1.2vw, 17px)", color: "var(--ink-dim)", lineHeight: "1.65", maxWidth: "560px" }}>
+                  Ascnd is the class provider operating out of Limitless Gymnasium.
+                  From conditioning and circuits to yoga and more — their timetable runs
+                  across the week so you can fit a class around your regular training.
+                </p>
+                <div style={{ marginTop: "24px" }}>
+                  <a
+                    className="val"
+                    href={ASCND_INSTAGRAM_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ fontFamily: "var(--font-archivo)", fontWeight: 600, fontSize: "clamp(15px, 1.2vw, 17px)", borderBottom: "1px solid var(--line-2)", paddingBottom: "2px", transition: "border-color 0.2s" }}
+                  >
+                    IG @ascnd.bc ↗
+                  </a>
+                </div>
+              </div>
+              <div className="ascnd-cta">
+                <a className="btn-big" href={ASCND_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  <span>Book a Class</span>
+                  <span className="arr">→</span>
+                </a>
+                <div className="btn-meta">External · goteamup.com · Ascnd</div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
 
       {/* ============= VISIT ============= */}
       <section className="s" id="visit">
@@ -305,53 +352,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============= CLASSES (ASCND) ============= */}
-      <section className="s" id="classes">
-        <div className="inner">
-          <div className="section-head">
-            <div className="num"><span className="eyebrow"><b>05</b> / Classes</span></div>
-            <div className="ttl">
-              <h2 className="h-section">Group classes.<br /><span className="it">Book your spot.</span></h2>
-              <p className="eyebrow" style={{ color: "var(--ink-dim)", maxWidth: "520px", lineHeight: "1.7", letterSpacing: ".18em" }}>
-                Classes at Limitless are run by our sister company Ascnd.
-                Book directly through their platform — all levels welcome.
-              </p>
-            </div>
-          </div>
-
-          <Reveal>
-            <div className="ascnd-block">
-              <div className="ascnd-info">
-                <div className="col-title">— About Ascnd</div>
-                <p style={{ fontSize: "clamp(15px, 1.2vw, 17px)", color: "var(--ink-dim)", lineHeight: "1.65", maxWidth: "560px" }}>
-                  Ascnd is the class provider operating out of Limitless Gymnasium.
-                  From conditioning and circuits to yoga and more — their timetable runs
-                  across the week so you can fit a class around your regular training.
-                </p>
-                <div style={{ marginTop: "24px" }}>
-                  <a
-                    className="val"
-                    href={ASCND_INSTAGRAM_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ fontFamily: "var(--font-archivo)", fontWeight: 600, fontSize: "clamp(15px, 1.2vw, 17px)", borderBottom: "1px solid var(--line-2)", paddingBottom: "2px", transition: "border-color 0.2s" }}
-                  >
-                    IG @ascnd.bc ↗
-                  </a>
-                </div>
-              </div>
-              <div className="ascnd-cta">
-                <a className="btn-big" href={ASCND_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                  <span>Book a Class</span>
-                  <span className="arr">→</span>
-                </a>
-                <div className="btn-meta">External · goteamup.com · Ascnd</div>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
+      
       {/* ============= MEMBERS CTA ============= */}
       <section className="members-section" id="members">
         <div className="inner">
