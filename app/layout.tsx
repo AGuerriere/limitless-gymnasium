@@ -53,18 +53,36 @@ export const metadata: Metadata = {
     description:
       "Independent, locally owned gym in Ballycastle, Co. Antrim. Serious equipment, qualified staff, open 7 days a week — train without limits.",
     locale: "en_GB",
+    images: [
+      {
+        url: "/logo.webp",
+        width: 502,
+        height: 206,
+        alt: "Limitless Gymnasium",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Limitless Gymnasium — Ballycastle",
     description:
       "Independent, locally owned gym in Ballycastle, Co. Antrim. Serious equipment, qualified staff, open 7 days a week — train without limits.",
+    images: ["/logo.webp"],
   },
   robots: {
     index: true,
     follow: true,
     googleBot: { index: true, follow: true },
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", rel: "shortcut icon" },
+      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
+  manifest: "/site.webmanifest",
 };
 
 const jsonLd = {
