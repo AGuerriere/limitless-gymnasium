@@ -36,7 +36,7 @@ export default function Home() {
             <span className="it">limits.</span>
           </h1>
           <p className="tag reveal">
-            Independent, locally owned, built for people who want to train properly.
+            Independent, locally owned, built for people who want to train properly. 
             Serious equipment, qualified staff, and no distractions — just work.
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function Home() {
               <p className="lede">
                 Limitless is a small, independent gym in the centre of Ballycastle.
                 Founded and run by local people, it&apos;s a straightforward place to train —{" "}
-                <em>well-equipped, well-staffed, and open long hours</em> so you can get in
+                <em>well-equipped, well-staffed, and open long hours </em>so you can get in
                 whenever suits you. No gimmicks, no contracts you can&apos;t get out of.
                 Just a good gym where you can make real progress.
               </p>
@@ -335,8 +335,9 @@ export default function Home() {
                     <div className="label">Address</div>
                     <div className="val">
                       Limitless Gymnasium<br />
+                      30A Castle St,
                       Ballycastle, Co. Antrim<br />
-                      BT54
+                      BT54 6AR
                     </div>
                   </div>
                   <div className="contact-item">
@@ -387,7 +388,7 @@ export default function Home() {
             <div>
               <div className="col-label">— Visit</div>
               <div className="links-v">
-                <span>Ballycastle, Co. Antrim · BT54</span>
+                <span>30A Castle St, Ballycastle, Co. Antrim · BT54 6AR</span>
                 <a href="https://www.instagram.com/limitless.gymnasium/" target="_blank" rel="noopener noreferrer">Contact via Instagram</a>
                 <a href={ASCND_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">Ascnd (Classes) on Instagram</a>
               </div>
