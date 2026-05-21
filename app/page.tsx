@@ -156,7 +156,7 @@ export default function Home() {
               {/* Aidan — Founder */}
               <div className="coach-founder-row">
                 <div className="portrait-wrap">
-                  <Image src="/portraits/aidan.png" alt="Aidan — Founder" fill style={{ objectFit: "cover", objectPosition: "center 10%" }} />
+                  <Image src="/portraits/aidan.webp" alt="Aidan — Founder" fill style={{ objectFit: "cover", objectPosition: "center 10%" }} />
                 </div>
                 <div className="founder-info">
                   <div>
@@ -179,8 +179,10 @@ export default function Home() {
 
               {/* Conall */}
               <article className="coach">
-                <div className="portrait">
-                  <Image src="/portraits/conall.webp" alt="Conall McGlynn" fill style={{ objectFit: "cover", objectPosition: "center 15%" }} />
+                <div className="portrait-shell">
+                  <div className="portrait">
+                    <Image src="/portraits/conall.webp" alt="Conall McGlynn" fill style={{ objectFit: "cover", objectPosition: "center 15%" }} />
+                  </div>
                 </div>
                 <div className="id">
                   <div className="role">— Welcomes</div>
@@ -196,8 +198,10 @@ export default function Home() {
 
               {/* Eilish */}
               <article className="coach">
-                <div className="portrait">
-                  <Image src="/portraits/eilish.webp" alt="Eilish McCaw" fill style={{ objectFit: "cover", objectPosition: "center 12%" }} />
+                <div className="portrait-shell">
+                  <div className="portrait">
+                    <Image src="/portraits/eilish.webp" alt="Eilish McCaw" fill style={{ objectFit: "cover", objectPosition: "center 12%" }} />
+                  </div>
                 </div>
                 <div className="id">
                   <div className="role">— Welcomes</div>
@@ -211,8 +215,10 @@ export default function Home() {
 
               {/* Tiarnan */}
               <article className="coach">
-                <div className="portrait">
-                  <Image src="/portraits/tiarnan.png" alt="Tiarnan Shepherd" fill style={{ objectFit: "cover", objectPosition: "center 8%" }} />
+                <div className="portrait-shell">
+                  <div className="portrait">
+                    <Image src="/portraits/tiarnan.webp" alt="Tiarnan Shepherd" fill style={{ objectFit: "cover", objectPosition: "center 8%" }} />
+                  </div>
                 </div>
                 <div className="id">
                   <div className="role">— Welcomes</div>
@@ -226,8 +232,10 @@ export default function Home() {
 
               {/* Danny */}
               <article className="coach">
-                <div className="portrait">
-                  <Image src="/portraits/danny.webp" alt="Danny Scullion" fill style={{ objectFit: "cover", objectPosition: "center 5%" }} />
+                <div className="portrait-shell">
+                  <div className="portrait">
+                    <Image src="/portraits/danny.webp" alt="Danny Scullion" fill style={{ objectFit: "cover", objectPosition: "center 5%" }} />
+                  </div>
                 </div>
                 <div className="id">
                   <div className="role">— Welcomes</div>
@@ -250,7 +258,7 @@ export default function Home() {
       <section className="s" id="classes">
         <div className="inner">
           <div className="section-head">
-            <div className="num"><span className="eyebrow"><b>05</b> / Classes</span></div>
+            <div className="num"><span className="eyebrow"><b>04</b> / Classes</span></div>
             <div className="ttl">
               <h2 className="h-section">Group classes.<br /><span className="it">Book your spot.</span></h2>
               <p className="eyebrow" style={{ color: "var(--ink-dim)", maxWidth: "520px", lineHeight: "1.7", letterSpacing: ".18em" }}>
@@ -298,7 +306,7 @@ export default function Home() {
       <section className="s" id="visit">
         <div className="inner">
           <div className="section-head">
-            <div className="num"><span className="eyebrow"><b>04</b> / Visit</span></div>
+            <div className="num"><span className="eyebrow"><b>05</b> / Opening Hours</span></div>
             <div className="ttl"><h2 className="h-section">Open early.<br />Open late.</h2></div>
           </div>
 
