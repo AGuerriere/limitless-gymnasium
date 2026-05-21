@@ -415,7 +415,12 @@ export default function Home() {
           </div>
           <div className="baseline">
             <span>© <YearStamp /> Limitless Gymnasium · Ballycastle</span>
-            <span>No cookies · No tracking</span>
+            <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
+              <span>No cookies · No tracking</span>
+              <a href="https://mindtechnica.com" target="_blank" rel="noopener noreferrer" className="made-by">
+                <Image src="/mindtechnica.webp" alt="Mindtechnica" width={2305} height={1457} style={{ height: "60px", width: "auto" }} />
+              </a>
+            </div>
           </div>
         </div>
       </footer>

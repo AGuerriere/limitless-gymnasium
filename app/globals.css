@@ -844,6 +844,8 @@ footer .baseline {
   footer .row { grid-template-columns: 1fr; gap: 32px; }
   footer .baseline { flex-direction: column; align-items: flex-start; }
 }
+.made-by { display: flex; align-items: center; opacity: 0.5; transition: opacity 0.2s; }
+.made-by:hover { opacity: 1; }
 .foot-mark {
   font-family: var(--font-archivo), sans-serif;
   font-weight: 900;
