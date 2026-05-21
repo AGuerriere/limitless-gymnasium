@@ -262,7 +262,7 @@ export default function Home() {
             <div className="ttl">
               <h2 className="h-section">Group classes.<br /><span className="it">Book your spot.</span></h2>
               <p className="eyebrow" style={{ color: "var(--ink-dim)", maxWidth: "520px", lineHeight: "1.7", letterSpacing: ".18em" }}>
-                Classes at Limitless are run by our sister company Ascnd.
+                Classes at Limitless are run by our sister company <strong>Ascnd</strong>.
                 Book directly through their platform — all levels welcome.
               </p>
             </div>
@@ -273,7 +273,7 @@ export default function Home() {
               <div className="ascnd-info">
                 <div className="col-title">— About Ascnd</div>
                 <p style={{ fontSize: "clamp(15px, 1.2vw, 17px)", color: "var(--ink-dim)", lineHeight: "1.65", maxWidth: "560px" }}>
-                  Ascnd is the class provider operating out of Limitless Gymnasium.
+                  <strong>ASCND</strong> is the class provider operating out of Limitless Gymnasium.
                   From conditioning and circuits to yoga and more — their timetable runs
                   across the week so you can fit a class around your regular training.
                 </p>
