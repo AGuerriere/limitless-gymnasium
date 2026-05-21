@@ -156,7 +156,7 @@ export default function Home() {
               {/* Aidan — Founder */}
               <div className="coach-founder-row">
                 <div className="portrait-wrap">
-                  <Image src="/portraits/aidan.webp" alt="Aidan — Founder" fill style={{ objectFit: "cover", objectPosition: "center 10%" }} />
+                  <Image src="/portraits/aidan.webp" alt="Aidan — Founder" fill style={{ objectFit: "cover" }} />
                 </div>
                 <div className="founder-info">
                   <div>
