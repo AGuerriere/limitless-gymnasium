@@ -172,8 +172,18 @@ export default function Home() {
                   </p>
                   <div className="founder-creds">
                     <div className="cred"><b>Founder</b> Limitless Gymnasium</div>
-                    <div className="cred"><b>Head Coach</b> &amp; Personal Trainer</div>
+                    <div className="cred"><b>Head Coach</b></div>
+                    <div className="cred"><b>Online Coaching</b></div>
+                    <div className="cred"><b>Personal Training Sessions</b></div>
                   </div>
+                  <a
+                    href="https://linktr.ee/aidymc.limitless"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="founder-book-btn"
+                  >
+                    Book a Service <span className="arr">→</span>
+                  </a>
                 </div>
               </div>
 
@@ -340,6 +350,18 @@ export default function Home() {
                       BT54 6AR
                     </div>
                   </div>
+                  <div className="map-row">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2277.5144161599246!2d-6.256893523153305!3d55.20031117288472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861d36054e2164b%3A0x82ee1f1f0bbc3cca!2sLimitless%20Gymnasium!5e0!3m2!1sen!2suk!4v1779486528768!5m2!1sen!2suk"
+                      width="100%"
+                      height="300"
+                      style={{ border: 0, display: "block" }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Limitless Gymnasium on Google Maps"
+                    />
+                  </div>
                   <div className="contact-item">
                     <div className="label">Contact</div>
                     <div className="val" style={{ fontSize: "clamp(14px, 1.2vw, 16px)", color: "var(--ink-dim)", fontFamily: "var(--font-manrope)", fontWeight: 400, lineHeight: 1.6 }}>
@@ -356,12 +378,13 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
             </div>
           </Reveal>
         </div>
       </section>
 
-      
+
       {/* ============= MEMBERS CTA ============= */}
       <section className="members-section" id="members">
         <div className="inner">
