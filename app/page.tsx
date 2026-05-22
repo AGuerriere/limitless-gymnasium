@@ -62,20 +62,17 @@ export default function Home() {
             <div className="col-label">— THE&nbsp;ETHOS</div>
             <Reveal>
               <p className="lede">
-                Limitless is an independent gym in the centre of Ballycastle, built by local people
-                with a passion for fitness and community. Our facilities provide a welcoming training
-                environment, quality equipment and a team of passionate trainers dedicated to helping
-                you reach your goals.{" "}
-                <em>Whether you&apos;re building strength, improving fitness, or taking the first steps
-                towards a healthier lifestyle</em>, we are here to support and motivate you to succeed.
-                At Limitless, training is about more than fitness — it&apos;s about building confidence,
-                creating habits and becoming the best version of yourself.
+                Limitless is an independent gym in the heart of Ballycastle, built by local people
+                with a passion for fitness and community. We provide a welcoming environment, quality
+                equipment, and dedicated trainers to support you at every stage of your fitness journey.{" "}
+                <em>Whether you&apos;re building strength, improving fitness, or starting a healthier
+                lifestyle</em>, Limitless is here to help you grow in confidence and become the best
+                version of yourself.
               </p>
               <p className="lede" style={{ marginTop: "1.5em" }}>
-                At Limitless, we believe fitness should be accessible, motivating, and fun for everyone.
-                Built on community, hard work and support, our mission is to create an environment where
-                people of all ages and abilities feel welcomed, challenged and motivated to improve.
-                Limitless is a place where goals become achievements and lasting transformation begins.
+                At Limitless, we believe fitness should be accessible, motivating, and enjoyable for everyone.
+                Built on community, hard work, and support, we create a space where people of all abilities
+                feel welcomed, challenged, and inspired to achieve lasting results.
               </p>
             </Reveal>
           </div>
