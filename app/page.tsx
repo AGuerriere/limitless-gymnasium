@@ -24,20 +24,19 @@ export default function Home() {
         <div className="hero-photo-bg" />
 
         <div className="top-meta">
-          <span>EST. <b>2022</b> · BALLYCASTLE</span>
+          <span>EST. <b>2024</b> · BALLYCASTLE</span>
           <span>55.2003°N &nbsp; 6.2543°W</span>
         </div>
 
         <div className="center">
-          <div className="eyebrow reveal">A HARDCORE LOCAL GYM · BALLYCASTLE</div>
+          <div className="eyebrow reveal">WELCOME TO LIMITLESS</div>
           <h1 className="reveal">
             TRAIN<br />
             WITHOUT<br />
             <span className="it">limits.</span>
           </h1>
           <p className="tag reveal">
-            Independent, locally owned, built for people who want to train properly. 
-            Serious equipment, qualified staff, and no distractions — just work.
+            Transform your fitness journey with premium equipment, expert trainers, and limitless potential.
           </p>
         </div>
 
@@ -63,11 +62,20 @@ export default function Home() {
             <div className="col-label">— THE&nbsp;ETHOS</div>
             <Reveal>
               <p className="lede">
-                Limitless is a small, independent gym in the centre of Ballycastle.
-                Founded and run by local people, it&apos;s a straightforward place to train —{" "}
-                <em>well-equipped, well-staffed, and open long hours </em>so you can get in
-                whenever suits you. No gimmicks, no contracts you can&apos;t get out of.
-                Just a good gym where you can make real progress.
+                Limitless is an independent gym in the centre of Ballycastle, built by local people
+                with a passion for fitness and community. Our facilities provide a welcoming training
+                environment, quality equipment and a team of passionate trainers dedicated to helping
+                you reach your goals.{" "}
+                <em>Whether you&apos;re building strength, improving fitness, or taking the first steps
+                towards a healthier lifestyle</em>, we are here to support and motivate you to succeed.
+                At Limitless, training is about more than fitness — it&apos;s about building confidence,
+                creating habits and becoming the best version of yourself.
+              </p>
+              <p className="lede" style={{ marginTop: "1.5em" }}>
+                At Limitless, we believe fitness should be accessible, motivating, and fun for everyone.
+                Built on community, hard work and support, our mission is to create an environment where
+                people of all ages and abilities feel welcomed, challenged and motivated to improve.
+                Limitless is a place where goals become achievements and lasting transformation begins.
               </p>
             </Reveal>
           </div>
@@ -87,8 +95,8 @@ export default function Home() {
                 <div className="l">Days a week</div>
               </div>
               <div className="kpi">
-                <div className="v">BT54</div>
-                <div className="l">Ballycastle</div>
+                <div className="v">20+</div>
+                <div className="l">Free Car Park Spots</div>
               </div>
             </div>
           </Reveal>
@@ -145,7 +153,7 @@ export default function Home() {
               <h2 className="h-section">The coaches.</h2>
               <p className="eyebrow" style={{ color: "var(--ink-dim)", maxWidth: "520px", lineHeight: "1.7", letterSpacing: ".18em" }}>
                 Qualified, on the floor, and approachable.
-                PT sessions can be booked at reception or through the members portal.
+                PT sessions can be booked at reception or through social media platforms.
               </p>
             </div>
           </div>
@@ -163,18 +171,18 @@ export default function Home() {
                     <div className="founder-tag">— Founder &amp; Head Coach</div>
                   </div>
                   <h3 className="founder-name">Aidan</h3>
-                  <div className="founder-role">Limitless Gymnasium · Est. 2022</div>
+                  <div className="founder-role">Limitless Gymnasium · Est. 2024</div>
                   <p className="founder-bio">
-                    Aidan opened Limitless in 2022 with one straightforward goal — to give
-                    Ballycastle a proper, independent gym run by people who actually train.
-                    He&apos;s on the floor most days and available to help with programming,
-                    technique, or just getting started.
+                    Aidan opened Limitless in 2024 with one straightforward goal — to give
+                    Ballycastle a proper, independent gym providing a welcoming training environment
+                    with a good atmosphere and quality equipment. He&apos;s on the floor most days and
+                    available to help with programming, technique, or just getting started.
                   </p>
                   <div className="founder-creds">
                     <div className="cred"><b>Founder</b> Limitless Gymnasium</div>
-                    <div className="cred"><b>Head Coach</b></div>
-                    <div className="cred"><b>Online Coaching</b></div>
-                    <div className="cred"><b>Personal Training Sessions</b></div>
+                    <div className="cred"><b>L3</b> Personal Trainer</div>
+                    <div className="cred"><b>L2</b> Fitness Instructor</div>
+                    <div className="cred"><b>Online Coaching</b> &amp; Transformations</div>
                   </div>
                   <a
                     href="https://linktr.ee/aidymc.limitless"
