@@ -275,7 +275,7 @@ img { display: block; max-width: 100%; }
 .hero-photo-bg {
   position: absolute;
   inset: 0;
-  background: url('/gym/main.webp') center center / cover no-repeat;
+  background: url('/gym/push.webp') center center / cover no-repeat;
   filter: brightness(0.22) saturate(0.3);
 }
 .hero-photo-bg::after {

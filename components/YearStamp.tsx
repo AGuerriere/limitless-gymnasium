@@ -1,5 +1,5 @@
 "use client";
 
 export default function YearStamp() {
-  return <span>{new Date().getFullYear()}</span>;
+  return <span suppressHydrationWarning>{new Date().getFullYear()}</span>;
 }

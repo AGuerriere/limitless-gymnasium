@@ -137,8 +137,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${manrope.variable} ${archivo.variable} ${jetbrains.variable}`}>
-      <body>
+    <html lang="en" className={`${manrope.variable} ${archivo.variable} ${jetbrains.variable}`} suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
