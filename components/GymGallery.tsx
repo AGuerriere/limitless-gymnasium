@@ -6,16 +6,24 @@ import { useState, useCallback, useEffect } from "react";
 const TILES = ["t1", "t2", "t3", "t4", "t5"] as const;
 
 const ALL_PHOTOS = [
-  { src: "/gym/main.webp",        alt: "Main training floor", cap: "01 · Main floor"    },
-  { src: "/gym/main-2.webp",      alt: "Training area",       cap: "02 · Training area" },
-  { src: "/gym/back.webp",        alt: "Back station",        cap: "03 · Back"           },
-  { src: "/gym/dumbells.webp",    alt: "Dumbbells",           cap: "04 · Dumbbells"      },
-  { src: "/gym/legs.webp",        alt: "Legs area",           cap: "05 · Legs"           },
-  { src: "/gym/abs-machine.webp", alt: "Abs machine",         cap: "06 · Abs machine"    },
-  { src: "/gym/back-2.webp",      alt: "Back equipment",      cap: "07 · Back"           },
-  { src: "/gym/hack-squat.webp",  alt: "Hack squat",          cap: "08 · Hack squat"     },
-  { src: "/gym/t-bar.webp",       alt: "T-bar row",           cap: "09 · T-bar"          },
-  { src: "/gym/triceps.webp",     alt: "Triceps station",     cap: "10 · Triceps"        },
+  // Page 1
+  { src: "/gym/main.webp",                alt: "Main training floor",    cap: "01 · Main floor"          },
+  { src: "/gym/main-2.webp",              alt: "Training area",          cap: "02 · Training area"       },
+  { src: "/gym/back.webp",               alt: "Back station",           cap: "03 · Back"                },
+  { src: "/gym/dumbells.webp",           alt: "Dumbbells",              cap: "04 · Dumbbells"           },
+  { src: "/gym/legs.webp",               alt: "Legs area",              cap: "05 · Legs"                },
+  // Page 2 — main-3 first
+  { src: "/gym/main-3.webp",             alt: "Training floor",         cap: "06 · Main floor"          },
+  { src: "/gym/abs-machine.webp",        alt: "Abs machine",            cap: "07 · Abs machine"         },
+  { src: "/gym/back-2.webp",             alt: "Back equipment",         cap: "08 · Back"                },
+  { src: "/gym/hack-squat.webp",         alt: "Hack squat",             cap: "09 · Hack squat"          },
+  { src: "/gym/t-bar.webp",              alt: "T-bar row",              cap: "10 · T-bar"               },
+  // Page 3
+  { src: "/gym/triceps.webp",            alt: "Triceps station",        cap: "11 · Triceps"             },
+  { src: "/gym/cardio.webp",             alt: "Cardio area",            cap: "12 · Cardio"              },
+  { src: "/gym/classes.webp",            alt: "Classes",                cap: "13 · Classes"             },
+  { src: "/gym/lateral-raise-machine.webp", alt: "Lateral raise machine", cap: "14 · Lateral raise"    },
+  { src: "/gym/stairs.webp",             alt: "Stairs",                 cap: "15 · Stairs"              },
 ];
 
 const PAGE_SIZE = 5;
