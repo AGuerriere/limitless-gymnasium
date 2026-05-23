@@ -3,6 +3,7 @@ import Nav from "@/components/Nav";
 import Reveal from "@/components/Reveal";
 import HoursHighlight from "@/components/HoursHighlight";
 import YearStamp from "@/components/YearStamp";
+import GymGallery from "@/components/GymGallery";
 // HoursHighlight runs client-side to highlight today's hours row
 
 const ASHBOURNE_URL =
@@ -66,13 +67,8 @@ export default function Home() {
                 with a passion for fitness and community. We provide a welcoming environment, quality
                 equipment, and dedicated trainers to support you at every stage of your fitness journey.{" "}
                 <em>Whether you&apos;re building strength, improving fitness, or starting a healthier
-                lifestyle</em>, Limitless is here to help you grow in confidence and become the best
+                  lifestyle</em>, Limitless is here to help you grow in confidence and become the best
                 version of yourself.
-              </p>
-              <p className="lede" style={{ marginTop: "1.5em" }}>
-                At Limitless, we believe fitness should be accessible, motivating, and enjoyable for everyone.
-                Built on community, hard work, and support, we create a space where people of all abilities
-                feel welcomed, challenged, and inspired to achieve lasting results.
               </p>
             </Reveal>
           </div>
@@ -115,28 +111,7 @@ export default function Home() {
           </div>
 
           <Reveal>
-            <div className="gym-grid">
-              <div className="tile t1">
-                <Image src="/gym/main-floor.png" alt="Main training floor" fill style={{ objectFit: "cover" }} />
-                <span className="cap">01 · Main floor</span>
-              </div>
-              <div className="tile t2">
-                <Image src="/gym/free-weights.png" alt="Free weight and machine area" fill style={{ objectFit: "cover" }} />
-                <span className="cap">02 · Free weights</span>
-              </div>
-              <div className="tile t3">
-                <Image src="/gym/cables.png" alt="Cable and machine setup" fill style={{ objectFit: "cover" }} />
-                <span className="cap">03 · Cables</span>
-              </div>
-              <div className="tile t4">
-                <Image src="/gym/cardio.png" alt="Cardio area" fill style={{ objectFit: "cover" }} />
-                <span className="cap">04 · Cardio</span>
-              </div>
-              <div className="tile t5">
-                <Image src="/gym/machines.png" alt="Selectorised machines" fill style={{ objectFit: "cover", objectPosition: "center 30%" }} />
-                <span className="cap">05 · Machines</span>
-              </div>
-            </div>
+            <GymGallery />
           </Reveal>
         </div>
       </section>
