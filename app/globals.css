@@ -709,17 +709,20 @@ img { display: block; max-width: 100%; }
   flex-direction: column;
   gap: 20px;
   position: relative;
-  transition: background 0.3s ease;
-  cursor: default;
 }
-.coach:hover { background: var(--bg-2); }
 .coach:nth-child(3n) { border-right: none; }
-.coach .portrait {
+.coach .portrait-shell {
   position: relative;
   aspect-ratio: 3 / 4;
+}
+.coach .portrait {
+  position: absolute;
+  inset: 0;
   background: var(--bg);
   overflow: hidden;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 62%, 0 100%);
+  transition: opacity 0.38s ease;
+  z-index: 1;
 }
 .coach .portrait img {
   width: 100%;
@@ -729,7 +732,38 @@ img { display: block; max-width: 100%; }
   display: block;
   transition: transform 0.6s ease;
 }
-.coach:hover .portrait img { transform: scale(1.04); }
+.coach .portrait-back {
+  position: absolute;
+  inset: 0;
+  background: var(--bg-2);
+  border-top: 2px solid var(--ink);
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.38s ease;
+  z-index: 2;
+}
+.coach .portrait-back p {
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink-dim);
+  text-wrap: pretty;
+}
+@media (hover: hover) {
+  .coach:hover .portrait { opacity: 0; }
+  .coach:hover .portrait img { transform: scale(1.04); }
+  .coach:hover .portrait-back { opacity: 1; pointer-events: auto; }
+}
+@media (hover: none) {
+  .coach { cursor: pointer; }
+}
+.coach.flipped .portrait { opacity: 0; }
+.coach.flipped .portrait-back { opacity: 1; pointer-events: auto; }
 .coach .id .role {
   font-family: var(--font-jetbrains), monospace;
   font-size: 10px;

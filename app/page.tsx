@@ -173,15 +173,18 @@ export default function Home() {
                   <div className="portrait">
                     <Image src="/portraits/conall.webp" alt="Conall McGlynn" fill style={{ objectFit: "cover", objectPosition: "center 15%" }} />
                   </div>
+                  <div className="portrait-back">
+                    <p>With expertise spanning personal training through to performance nutrition, Conall takes a well-rounded approach to helping clients build lasting habits and achieve long-term results.</p>
+                  </div>
                 </div>
                 <div className="id">
                   <div className="role">— Welcomes</div>
                   <div className="name">Conall<br />McGlynn</div>
                 </div>
                 <div className="creds">
-                  <div className="cred"><b>L2</b> Gym Instructor</div>
-                  <div className="cred"><b>L3</b> Personal Training</div>
                   <div className="cred"><b>L4</b> Nutrition · Weight Mgmt &amp; Athletic Performance</div>
+                  <div className="cred"><b>L3</b> Personal Training</div>
+                  <div className="cred"><b>L2</b> Gym Instructor</div>
                 </div>
                 <div className="socials">IG @mcglynn_fitness</div>
               </article>
@@ -191,6 +194,9 @@ export default function Home() {
                 <div className="portrait-shell">
                   <div className="portrait">
                     <Image src="/portraits/eilish.webp" alt="Eilish McCaw" fill style={{ objectFit: "cover", objectPosition: "center 12%" }} />
+                  </div>
+                  <div className="portrait-back">
+                    <p>Dedicated to creating a welcoming and supportive environment, Eilish helps people of all fitness levels build confidence and achieve their goals with practical, sustainable training.</p>
                   </div>
                 </div>
                 <div className="id">
@@ -209,6 +215,9 @@ export default function Home() {
                   <div className="portrait">
                     <Image src="/portraits/tiarnan.webp" alt="Tiarnan Shepherd" fill style={{ objectFit: "cover", objectPosition: "center 8%" }} />
                   </div>
+                  <div className="portrait-back">
+                    <p>My goal as a trainer is to help you improve physical performance, build better health, and provide the support and guidance needed to achieve lasting results. With broad experience in training and athletic performance coaching, I deliver personalised 1-to-1 coaching and tailored training programmes designed around your specific goals and lifestyle.</p>
+                  </div>
                 </div>
                 <div className="id">
                   <div className="role">— Welcomes</div>
@@ -226,12 +235,16 @@ export default function Home() {
                   <div className="portrait">
                     <Image src="/portraits/danny.webp" alt="Danny Scullion" fill style={{ objectFit: "cover", objectPosition: "center 5%" }} />
                   </div>
+                  <div className="portrait-back">
+                    <p>Offering 1-1 and 2-1 coaching tailored to help you become stronger, fitter, and more confident. I&apos;m also the coach behind ASCND, where I run female-only small group personal training sessions with up to 6 people per class. My main focus is building muscular endurance and cardiovascular endurance while creating a motivating and enjoyable training environment for everyone.</p>
+                  </div>
                 </div>
                 <div className="id">
                   <div className="role">— Welcomes</div>
                   <div className="name">Danny<br />Scullion</div>
                 </div>
                 <div className="creds">
+                  <div className="cred"><b>ASCND</b> Head Coach</div>
                   <div className="cred"><b>L2</b> Fitness Instructor</div>
                 </div>
                 <div className="socials">IG @ds_coaching.limitless</div>

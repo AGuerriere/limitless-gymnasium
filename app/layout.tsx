@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope, Archivo, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import RevealInit from "@/components/RevealInit";
+import CoachFlipInit from "@/components/CoachFlipInit";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -144,6 +145,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <RevealInit />
+        <CoachFlipInit />
         {children}
       </body>
     </html>
