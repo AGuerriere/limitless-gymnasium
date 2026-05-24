@@ -157,6 +157,12 @@ export default function Home() {
                     <div className="cred"><b>Online Coaching</b> &amp; Transformations</div>
                   </div>
                   <a
+                    href="https://www.instagram.com/aidymc.limitless/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="socials"
+                  >IG @aidymc.limitless ↗</a>
+                  <a
                     href="https://linktr.ee/aidymc.limitless"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -186,7 +192,7 @@ export default function Home() {
                   <div className="cred"><b>L3</b> Personal Training</div>
                   <div className="cred"><b>L2</b> Gym Instructor</div>
                 </div>
-                <div className="socials">IG @mcglynn_fitness</div>
+                <a className="socials" href="https://www.instagram.com/mcglynn_fitness/" target="_blank" rel="noopener noreferrer">IG @mcglynn_fitness ↗</a>
               </article>
 
               {/* Eilish */}
@@ -206,7 +212,7 @@ export default function Home() {
                 <div className="creds">
                   <div className="cred"><b>L2</b> Fitness Instructor</div>
                 </div>
-                <div className="socials">IG @eilish_elite.fitness</div>
+                <a className="socials" href="https://www.instagram.com/eilish_elite.fitness/" target="_blank" rel="noopener noreferrer">IG @eilish_elite.fitness ↗</a>
               </article>
 
               {/* Tiarnan */}
@@ -226,7 +232,7 @@ export default function Home() {
                 <div className="creds">
                   <div className="cred"><b>L2</b> Fitness Instructor</div>
                 </div>
-                <div className="socials">IG @tiarnan_shepherd</div>
+                <a className="socials" href="https://www.instagram.com/tiarnan_shepherd/" target="_blank" rel="noopener noreferrer">IG @tiarnan_shepherd ↗</a>
               </article>
 
               {/* Danny */}
@@ -247,7 +253,7 @@ export default function Home() {
                   <div className="cred"><b>ASCND</b> Head Coach</div>
                   <div className="cred"><b>L2</b> Fitness Instructor</div>
                 </div>
-                <div className="socials">IG @ds_coaching.limitless</div>
+                <a className="socials" href="https://www.instagram.com/ds_coaching.limitless/" target="_blank" rel="noopener noreferrer">IG @ds_coaching.limitless ↗</a>
               </article>
 
               {/* Empty cell to fill last row */}
