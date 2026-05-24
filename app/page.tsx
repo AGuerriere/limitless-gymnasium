@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         <div className="bot-row">
-          <div className="ticker">— PUSH · PULL · REPEAT —</div>
+          <div className="ticker">— PUSH · PULL · LEGS —</div>
           <a className="scroll-cue" href="#about" aria-label="Scroll">
             <span>Scroll</span>
             <span className="line" />
@@ -173,6 +173,47 @@ export default function Home() {
                 </div>
               </div>
 
+              {/* Danny */}
+              <article className="coach">
+                <div className="portrait-shell">
+                  <div className="portrait">
+                    <Image src="/portraits/danny.webp" alt="Danny Scullion" fill style={{ objectFit: "cover", objectPosition: "center 5%" }} />
+                  </div>
+                  <div className="portrait-back">
+                    <p>Offering 1-1 and 2-1 coaching tailored to help you become stronger, fitter, and more confident. I&apos;m also the coach behind ASCND, where I run female-only small group personal training sessions with up to 6 people per class. My main focus is building muscular endurance and cardiovascular endurance while creating a motivating and enjoyable training environment for everyone.</p>
+                  </div>
+                </div>
+                <div className="id">
+                  <div className="role">— Welcomes</div>
+                  <div className="name">Danny<br />Scullion</div>
+                </div>
+                <div className="creds">
+                  <div className="cred"><b>ASCND</b> Head Coach</div>
+                  <div className="cred"><b>L2</b> Fitness Instructor</div>
+                </div>
+                <a className="socials" href="https://www.instagram.com/ds_coaching.limitless/" target="_blank" rel="noopener noreferrer">IG @ds_coaching.limitless ↗</a>
+              </article>
+
+              {/* Eilish */}
+              <article className="coach">
+                <div className="portrait-shell">
+                  <div className="portrait">
+                    <Image src="/portraits/eilish.webp" alt="Eilish McCaw" fill style={{ objectFit: "cover", objectPosition: "center 12%" }} />
+                  </div>
+                  <div className="portrait-back">
+                    <p>I&apos;m Eilish, and fitness has become a huge part of my life over the last four years after competing in bodybuilding. Through dedication, coaching, and consistency, I achieved my goal of stepping on stage and continue to pursue the sport today. I believe anyone can achieve their goals with the right mindset, support, and guidance. As the sole female PT at Limitless, I offer support with weight loss, toning, strength training, nutrition, and confidence building through tailored one-to-one, one-to-two, and group sessions in a welcoming gym environment.</p>
+                  </div>
+                </div>
+                <div className="id">
+                  <div className="role">— Welcomes</div>
+                  <div className="name">Eilish<br />McCaw</div>
+                </div>
+                <div className="creds">
+                  <div className="cred"><b>L2</b> Fitness Instructor</div>
+                </div>
+                <a className="socials" href="https://www.instagram.com/eilish_elite.fitness/" target="_blank" rel="noopener noreferrer">IG @eilish_elite.fitness ↗</a>
+              </article>
+
               {/* Conall */}
               <article className="coach">
                 <div className="portrait-shell">
@@ -195,26 +236,6 @@ export default function Home() {
                 <a className="socials" href="https://www.instagram.com/mcglynn_fitness/" target="_blank" rel="noopener noreferrer">IG @mcglynn_fitness ↗</a>
               </article>
 
-              {/* Eilish */}
-              <article className="coach">
-                <div className="portrait-shell">
-                  <div className="portrait">
-                    <Image src="/portraits/eilish.webp" alt="Eilish McCaw" fill style={{ objectFit: "cover", objectPosition: "center 12%" }} />
-                  </div>
-                  <div className="portrait-back">
-                    <p>Dedicated to creating a welcoming and supportive environment, Eilish helps people of all fitness levels build confidence and achieve their goals with practical, sustainable training.</p>
-                  </div>
-                </div>
-                <div className="id">
-                  <div className="role">— Welcomes</div>
-                  <div className="name">Eilish<br />McCaw</div>
-                </div>
-                <div className="creds">
-                  <div className="cred"><b>L2</b> Fitness Instructor</div>
-                </div>
-                <a className="socials" href="https://www.instagram.com/eilish_elite.fitness/" target="_blank" rel="noopener noreferrer">IG @eilish_elite.fitness ↗</a>
-              </article>
-
               {/* Tiarnan */}
               <article className="coach">
                 <div className="portrait-shell">
@@ -233,27 +254,6 @@ export default function Home() {
                   <div className="cred"><b>L2</b> Fitness Instructor</div>
                 </div>
                 <a className="socials" href="https://www.instagram.com/tiarnan_shepherd/" target="_blank" rel="noopener noreferrer">IG @tiarnan_shepherd ↗</a>
-              </article>
-
-              {/* Danny */}
-              <article className="coach">
-                <div className="portrait-shell">
-                  <div className="portrait">
-                    <Image src="/portraits/danny.webp" alt="Danny Scullion" fill style={{ objectFit: "cover", objectPosition: "center 5%" }} />
-                  </div>
-                  <div className="portrait-back">
-                    <p>Offering 1-1 and 2-1 coaching tailored to help you become stronger, fitter, and more confident. I&apos;m also the coach behind ASCND, where I run female-only small group personal training sessions with up to 6 people per class. My main focus is building muscular endurance and cardiovascular endurance while creating a motivating and enjoyable training environment for everyone.</p>
-                  </div>
-                </div>
-                <div className="id">
-                  <div className="role">— Welcomes</div>
-                  <div className="name">Danny<br />Scullion</div>
-                </div>
-                <div className="creds">
-                  <div className="cred"><b>ASCND</b> Head Coach</div>
-                  <div className="cred"><b>L2</b> Fitness Instructor</div>
-                </div>
-                <a className="socials" href="https://www.instagram.com/ds_coaching.limitless/" target="_blank" rel="noopener noreferrer">IG @ds_coaching.limitless ↗</a>
               </article>
 
               {/* Empty cell to fill last row */}
