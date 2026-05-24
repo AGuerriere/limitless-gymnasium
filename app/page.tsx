@@ -221,7 +221,7 @@ export default function Home() {
                     <Image src="/portraits/conall.webp" alt="Conall McGlynn" fill style={{ objectFit: "cover", objectPosition: "center 15%" }} />
                   </div>
                   <div className="portrait-back">
-                    <p>With expertise spanning personal training through to performance nutrition, Conall takes a well-rounded approach to helping clients build lasting habits and achieve long-term results.</p>
+                    <p>I&apos;m Conall, a 23-year-old coach with over four years of experience helping people improve their health, fitness, and confidence sustainably. I&apos;m qualified in Level 2 Gym Instructing, Level 3 Personal Training, and Level 4 Nutrition for Weight Management and Sport. My coaching focuses on building long-term habits that improve health, wellbeing, and physique without relying on quick fixes. Through online coaching and personal training, I aim to help people enjoy fitness, move better, and prioritise their long-term health.</p>
                   </div>
                 </div>
                 <div className="id">
