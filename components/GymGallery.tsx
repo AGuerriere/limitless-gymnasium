@@ -20,15 +20,13 @@ const ALL_PHOTOS = [
   { src: "/gym/t-bar.webp",                 alt: "T-bar row",              cap: "10 · T-bar"         },
   // Page 3
   { src: "/gym/triceps.webp",               alt: "Triceps station",        cap: "11 · Triceps"       },
-  { src: "/gym/classes.webp",               alt: "Upstairs cardio and classes floor with racks, rowers and bikes", cap: "12 · Classes floor" },
-  { src: "/gym/classes-2.webp",             alt: "Upstairs classes floor with spin bikes, air bike and sled track", cap: "13 · Classes floor" },
-  { src: "/gym/cardio.webp",                alt: "Upstairs cardio area with treadmills and rowers", cap: "14 · Cardio" },
+  { src: "/gym/lateral-raise-machine.webp", alt: "Lateral raise machine",  cap: "12 · Lateral raise" },
+  { src: "/gym/bikes.webp",                 alt: "Spin bikes on the upstairs cardio and classes floor", cap: "13 · Spin bikes" },
+  { src: "/gym/classes-2.webp",             alt: "Upstairs classes floor with spin bikes, air bike and sled track", cap: "14 · Classes floor" },
+  { src: "/gym/classes-racks.webp",         alt: "Upstairs classes racks with dumbbells and benches", cap: "15 · Classes racks" },
   // Page 4
-  { src: "/gym/racks.webp",                 alt: "Upstairs racks with dumbbells and benches", cap: "15 · Racks" },
-  { src: "/gym/classes-3.webp",             alt: "Upstairs classes floor with sled track and cardio machines", cap: "16 · Classes floor" },
-  { src: "/gym/bikes.webp",                 alt: "Spin bikes on the upstairs cardio and classes floor", cap: "17 · Spin bikes" },
-  { src: "/gym/lateral-raise-machine.webp", alt: "Lateral raise machine",  cap: "18 · Lateral raise" },
-  { src: "/gym/stairs.webp",                alt: "Stairs",                 cap: "19 · Stairs"        },
+  { src: "/gym/prowler.webp",               alt: "Prowler sled track on the upstairs classes floor", cap: "16 · Prowler" },
+  { src: "/gym/stairs.webp",                alt: "Stairs",                 cap: "17 · Stairs"        },
 ];
 
 const PAGE_SIZE = 5;
