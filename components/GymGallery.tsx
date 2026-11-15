@@ -20,10 +20,15 @@ const ALL_PHOTOS = [
   { src: "/gym/t-bar.webp",                 alt: "T-bar row",              cap: "10 · T-bar"         },
   // Page 3
   { src: "/gym/triceps.webp",               alt: "Triceps station",        cap: "11 · Triceps"       },
-  { src: "/gym/cardio.webp",                alt: "Cardio area",            cap: "12 · Cardio"        },
-  { src: "/gym/classes.webp",               alt: "Classes",                cap: "13 · Classes"       },
-  { src: "/gym/lateral-raise-machine.webp", alt: "Lateral raise machine",  cap: "14 · Lateral raise" },
-  { src: "/gym/stairs.webp",                alt: "Stairs",                 cap: "15 · Stairs"        },
+  { src: "/gym/classes.webp",               alt: "Upstairs cardio and classes floor with racks, rowers and bikes", cap: "12 · Classes floor" },
+  { src: "/gym/classes-2.webp",             alt: "Upstairs classes floor with spin bikes, air bike and sled track", cap: "13 · Classes floor" },
+  { src: "/gym/cardio.webp",                alt: "Upstairs cardio area with treadmills and rowers", cap: "14 · Cardio" },
+  // Page 4
+  { src: "/gym/racks.webp",                 alt: "Upstairs racks with dumbbells and benches", cap: "15 · Racks" },
+  { src: "/gym/classes-3.webp",             alt: "Upstairs classes floor with sled track and cardio machines", cap: "16 · Classes floor" },
+  { src: "/gym/bikes.webp",                 alt: "Spin bikes on the upstairs cardio and classes floor", cap: "17 · Spin bikes" },
+  { src: "/gym/lateral-raise-machine.webp", alt: "Lateral raise machine",  cap: "18 · Lateral raise" },
+  { src: "/gym/stairs.webp",                alt: "Stairs",                 cap: "19 · Stairs"        },
 ];
 
 const PAGE_SIZE = 5;
